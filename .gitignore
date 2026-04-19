@@ -16,13 +16,13 @@
 /*.tar.gz
 # Output files from R CMD check
 /*.Rcheck/
-# RStudio files
+# RStudio files (per-user)
 .Rproj.user/
 *.Rproj
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+# OAuth2 token
 .httr-oauth
 # knitr and R markdown default cache directories
 *_cache/
@@ -40,29 +40,21 @@ po/*~
 rsconnect/
 
 # ============================================================
-# renv (keep lockfile, ignore library)
+# renv — keep lockfile + activate script, ignore installed packages
 # ============================================================
 renv/library/
 renv/staging/
 renv/python/
 renv/local/
 renv/cellar/
-# keep renv.lock and renv/activate.R — do NOT ignore those
+# NOTE: renv.lock and renv/activate.R are NOT ignored (must be committed)
 
 # ============================================================
-# Project: derived data (regenerable from raw + scripts)
+# Derived data — regenerable from data/raw + scripts
+# Teammates re-run scripts to produce these locally
 # ============================================================
 data/interim/
 data/processed/
-
-# ============================================================
-# Project: outputs (regenerable — uncomment lines below to commit specific artifacts)
-# ============================================================
-outputs/figures/
-outputs/tables/
-outputs/session_info.txt
-# outputs/FINAL_REPORT.pdf       # uncomment if you want to commit the final PDF
-# outputs/FINAL_REPORT.md        # uncomment if you want to commit the combined markdown
 
 # ============================================================
 # OS cruft
@@ -72,7 +64,7 @@ Thumbs.db
 desktop.ini
 
 # ============================================================
-# Editors / IDEs
+# Editors / IDEs (per-user)
 # ============================================================
 .vscode/
 .idea/
@@ -81,6 +73,6 @@ desktop.ini
 *~
 
 # ============================================================
-# Claude Code local state (if any gets generated)
+# Claude Code local state
 # ============================================================
 .claude/
