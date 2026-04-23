@@ -1,0 +1,3 @@
+"model","n","r_squared","adj_r_squared"
+"F1_regular_only",422,0.657933363309167,0.643539470181087
+"F2_regular_plus_season_timing",422,0.661574310401161,0.646458522776399
