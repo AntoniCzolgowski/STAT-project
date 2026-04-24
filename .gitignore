@@ -53,6 +53,8 @@ renv/cellar/
 # Derived data — regenerable from data/raw + scripts
 # Teammates re-run scripts to produce these locally
 # ============================================================
+data/raw/*
+!data/raw/.keep
 data/interim/
 data/processed/
 
